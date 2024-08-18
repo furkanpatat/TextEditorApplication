@@ -32,7 +32,7 @@ public class TextEditor extends JFrame implements ActionListener{
 		this.setLocationRelativeTo(null);
 		
 		textArea = new JTextArea();
-		textArea.setLineWrap(true); // ASAGI SATIRA GECER
+		textArea.setLineWrap(true); 
 		textArea.setWrapStyleWord(true);
 		textArea.setFont(new Font("Arial",Font.PLAIN,20));
 		
@@ -144,7 +144,7 @@ public class TextEditor extends JFrame implements ActionListener{
 		}
 		if(e.getSource()==openItem) {
 			JFileChooser fileChooser = new JFileChooser();
-			fileChooser.setCurrentDirectory(new File("C:\\Users\\TNC\\Desktop"));
+			fileChooser.setCurrentDirectory(new File("your path"));
 			
 			FileNameExtensionFilter filter = new FileNameExtensionFilter("Text files","txt");
 			fileChooser.setFileFilter(filter);
@@ -171,7 +171,7 @@ public class TextEditor extends JFrame implements ActionListener{
 		}
 		if(e.getSource()==saveItem) {
 			JFileChooser fileChooser = new JFileChooser();
-			fileChooser.setCurrentDirectory(new File("C:\\Users\\TNC\\Desktop"));
+			fileChooser.setCurrentDirectory(new File("your path"));
 			
 			int response = fileChooser.showSaveDialog(null);
 			if(response == JFileChooser.APPROVE_OPTION) {
@@ -183,7 +183,7 @@ public class TextEditor extends JFrame implements ActionListener{
 					fileOut = new PrintWriter(file);
 					fileOut.println(textArea.getText());
 				} catch (FileNotFoundException e1) {
-					// TODO Auto-generated catch block
+					
 					e1.printStackTrace();
 				}finally {
 					fileOut.close();
