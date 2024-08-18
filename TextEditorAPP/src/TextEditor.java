@@ -98,20 +98,20 @@ public class TextEditor extends JFrame implements ActionListener{
 		menuBar.add(settings);
 		
 		
-		settingsImage = new ImageIcon("cogwheel.png");
+		settingsImage = new ImageIcon("your png");
 		settings.setIcon(settingsImage);
-		colorImage = new ImageIcon("color-wheel.png");
+		colorImage = new ImageIcon("your png");
 		textAreaBackgroundItem.setIcon(colorImage);
 		backgroundItem.setIcon(colorImage);
-		openFolderImage = new ImageIcon("open-folder.png");
+		openFolderImage = new ImageIcon("your png");
 		openItem.setIcon(openFolderImage);
-		saveFolderImage = new ImageIcon("save-file.png");
+		saveFolderImage = new ImageIcon("your png");
 		saveItem.setIcon(saveFolderImage);
-		exitImage = new ImageIcon("logout.png");
+		exitImage = new ImageIcon("your png");
 		exitItem.setIcon(exitImage);
-		fileImage = new ImageIcon("folders.png");
+		fileImage = new ImageIcon("your png");
 		fileMenu.setIcon(fileImage);
-		frameImage = new ImageIcon("txt-file.png");
+		frameImage = new ImageIcon("your png");
 		this.setIconImage(frameImage.getImage());
 		//------------menubar --------------
 		
